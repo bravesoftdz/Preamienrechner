@@ -16,7 +16,6 @@ object Form2: TForm2
     ItemHeight = 0
     MultiSelect = True
     TabOrder = 0
-    TopIndex = -1
   end
   object CheckGroup1: TCheckGroup
     Left = 120
@@ -33,12 +32,12 @@ object Form2: TForm2
     ChildSizing.ShrinkVertical = crsScaleChilds
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 1
-    ClientHeight = 86
+    ClientHeight = 75
     ClientWidth = 339
     TabOrder = 1
     object CheckBox1: TCheckBox
       Left = 6
-      Height = 25
+      Height = 21
       Top = 6
       Width = 327
       Caption = 'Portable App'
@@ -46,8 +45,8 @@ object Form2: TForm2
     end
     object CheckBox2: TCheckBox
       Left = 6
-      Height = 25
-      Top = 31
+      Height = 21
+      Top = 27
       Width = 327
       Caption = 'Quellcode Anzeigen'
       TabOrder = 1
@@ -55,9 +54,9 @@ object Form2: TForm2
     object CheckBox3: TCheckBox
       Cursor = crCross
       Left = 6
-      Height = 24
+      Height = 21
       Hint = 'Beta only'
-      Top = 56
+      Top = 48
       Width = 327
       Caption = 'In Windows Programme Instaliren'
       Enabled = False

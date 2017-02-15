@@ -27,7 +27,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure InstallClick(Sender: TObject);
     procedure search_for_Updates();
-    function ProInstall(Programname :String):Boolean;
+    //function ProInstall(Programname :String):Boolean;
     function search_for_Updates(Updatelabe : TLabel; version: Extended;Programname :String):Boolean;
   private
     { private declarations }
@@ -96,11 +96,22 @@ end;
 procedure TForm2.InstallClick(Sender: TObject);
 var
   Http : TFPCustomHTTPClient;
+  Installo: Array of String;
+  Box    : TCheckBox;
 begin
-  ProInstall('Preamienrechner');
+  //ProInstall('Preamienrechner');
+  ShowMessage(inttostr(CheckListBox1.Count));
+  //for Box in CheckListBox1.;
+  ShowMessage('sc1'+inttostr(CheckListBox1.SelCount));
+  ShowMessage('c2'+BoolToStr(CheckListBox1.Checked[0]));
+  ShowMessage('3'+BoolToStr(CheckListBox1.Checked[1]));
+  ShowMessage('4'+BoolToStr(CheckListBox1.Checked[2]));
+  ShowMessage('s5'+BoolToStr(CheckListBox1.Selected[0]));
+  ShowMessage('6'+BoolToStr(CheckListBox1.Selected[1]));
+  ShowMessage('7'+BoolToStr(CheckListBox1.Selected[2]));
   Http := TFPCustomHTTPClient.Create(nil);
-  Http.Get('http://79.209.87.4/DV/releases/Preamienrechner/version.dat','version.dat');
-
+  Http.Get('http://darkpinguin.net/DV/releases/Delphi-Calculator/Delphi-Calculator.exe','Delphi-Calculator.exe');
+  ///DV/releases/Delphi-Calculator/Delphi-Calculator.exe
 
 
 end;
