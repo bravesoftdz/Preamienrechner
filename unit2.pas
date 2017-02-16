@@ -20,6 +20,8 @@ type
     CheckBox3: TCheckBox;
     CheckGroup1: TCheckGroup;
     CheckListBox1: TCheckListBox;
+    procedure Exit_ButtonClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     procedure InstallClick(Sender: TObject);
     procedure search_for_Updates();
     function search_for_Updates(Updatelabe : TLabel; version: Extended;Programmname :String):Boolean;
@@ -31,6 +33,7 @@ type
     var
        //Programs      : string;   to be remouved?
        //newUpdate     : Boolean;  to be remouved?
+       Internet        : Boolean;
 
 
   end;
@@ -54,6 +57,8 @@ var
 
 begin
 
+  if NOT(Internet) then begin Exit;end;
+
   Http := TFPCustomHTTPClient.Create(nil);
   for i:= 0 to (CheckListBox1.Count-1) do begin
 
@@ -67,6 +72,28 @@ begin
 
 end;
 
+
+
+procedure TForm2.FormCreate(Sender: TObject);
+begin
+  Internet:=True;
+  try
+    TFPCustomHTTPClient.SimpleGet('http://darkpinguin.net/DV/len.data');
+  except
+    Internet:=False;
+    CheckListBox1.Items.Add('No can not connect to server');
+  end;
+end;
+
+//Close Update Window
+
+procedure TForm2.Exit_ButtonClick(Sender: TObject);
+begin
+
+  Form2.Close;
+end;
+
+
 //Serches for Updates for all Programms on the server
 
 procedure TForm2.search_for_Updates();
@@ -77,6 +104,8 @@ var
   proname : String;
 
 begin
+
+  if NOT(Internet) then begin Exit;end;
 
   len := TFPCustomHTTPClient.SimpleGet('http://darkpinguin.net/DV/len.data');                       // Number of Programms
 
@@ -98,6 +127,8 @@ var
   tmp       :string;
 
 begin
+
+  if NOT(Internet) then begin Exit;end;
 
   Result:=False;
   tmp:= TFPCustomHTTPClient.SimpleGet('http://darkpinguin.net/DV/releases/'+Programmname+'/version.dat');    // Loads the version Number of the newest version

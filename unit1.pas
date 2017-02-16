@@ -33,6 +33,7 @@ type
     procedure rmClick(Sender: TObject);
     procedure sendmailClick(Sender: TObject);
     procedure Update_ButtonClick(Sender: TObject);
+
   private
     { private declarations }
     const
@@ -95,6 +96,7 @@ begin
 
 end;
 
+// Clear all
 
 procedure TForm1.rmClick(Sender: TObject);
 begin
@@ -106,6 +108,7 @@ begin
 
 end;
 
+//run Thunderbird
 
 procedure TForm1.sendmailClick(Sender: TObject);
 var

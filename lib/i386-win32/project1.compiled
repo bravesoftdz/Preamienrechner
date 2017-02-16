@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="/usr/bin/fpc" Date="1448540913"/>
-  <Params Value=" -Twin32 -Pi386 -MObjFPC -Scghi -O1 -g -gl -WG -l -vewnhibq -Fi/media/2TB/DatenVerarbeitung/Preamienrechner.git/lib/i386-win32 -Fu/home/fabiank/.lazarus/lib/units/i386-win32/win32 -Fu/home/fabiank/.lazarus/lib/LCLBase/units/i386-win32 -Fu/home/fabiank/.lazarus/lib/LazUtils/lib/i386-win32 -Fu/home/fabiank/.lazarus/lib/units/i386-win32 -Fu/media/2TB/DatenVerarbeitung/Preamienrechner.git/ -FU/media/2TB/DatenVerarbeitung/Preamienrechner.git/lib/i386-win32/ -dLCL -dLCLwin32 project1.lpr"/>
-</CONFIG>

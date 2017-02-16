@@ -8,7 +8,6 @@ object Form1: TForm1
   Caption = 'Form1'
   ClientHeight = 237
   ClientWidth = 344
-  OnCreate = FormCreate
   Position = poScreenCenter
   LCLVersion = '1.6.2.0'
   object wq: TGroupBox

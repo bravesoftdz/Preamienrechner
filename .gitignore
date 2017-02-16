@@ -61,6 +61,11 @@
 __history/
 __recovery/
 *.~*
+lib/
+backup/
+*.ini
+*.dat
+projekt1
 
 # Castalia statistics file (since XE7 Castalia is distributed with Delphi)
 *.stat
