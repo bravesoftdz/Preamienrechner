@@ -2,6 +2,8 @@
 # It can make harm to an existing project source. Read explanations below.
 #
 # Resource files are binaries containing manifest, project icon and version info.
+lib/
+backup/
 # They can not be viewed as text or compared by diff-tools. Consider replacing them with .rc files.
 #*.res
 #
