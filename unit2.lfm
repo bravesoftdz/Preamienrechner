@@ -1,12 +1,11 @@
 object Form2: TForm2
-  Left = 394
+  Left = 1295
   Height = 392
-  Top = 194
+  Top = 146
   Width = 605
   Caption = 'Setup/Update'
   ClientHeight = 392
   ClientWidth = 605
-  OnCreate = FormCreate
   LCLVersion = '1.6.2.0'
   object CheckListBox1: TCheckListBox
     Left = 120
@@ -60,8 +59,6 @@ object Form2: TForm2
       Width = 327
       Caption = 'In Windows Programme Instaliren'
       Enabled = False
-      OnChange = CheckBox3Change
-      OnClick = CheckBox3Click
       TabOrder = 2
     end
   end
@@ -74,14 +71,6 @@ object Form2: TForm2
     Caption = 'Exit'
     TabOrder = 2
   end
-  object Update_Button: TButton
-    Left = 248
-    Height = 20
-    Top = 364
-    Width = 84
-    Caption = 'Update_Button'
-    TabOrder = 3
-  end
   object Install: TButton
     Left = 379
     Height = 20
@@ -89,6 +78,6 @@ object Form2: TForm2
     Width = 84
     Caption = 'Install'
     OnClick = InstallClick
-    TabOrder = 4
+    TabOrder = 3
   end
 end
