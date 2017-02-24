@@ -241,7 +241,6 @@ begin
   Result:=False;
   tmp:= TFPCustomHTTPClient.SimpleGet('http://darkpinguin.net/DV/'+user+'/'+Programmname+'/version.dat');    // Loads the version Number of the newest version
   netversion:=StrToFloat(copy(tmp,1,length(tmp)-1));                                                         // Formats the respond
-  ShowMessage(FloatToStr(netversion));
   if netversion > version then
   begin
 
