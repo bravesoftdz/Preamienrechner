@@ -160,7 +160,6 @@ end;
 procedure TForm1.Update_ButtonClick(Sender: TObject);
 begin
   Form2.ShowInTaskBar:=TShowInTaskbar.stDefault;
-  Form2.search_for_Updates();
   Form2.Show;
 end;
 

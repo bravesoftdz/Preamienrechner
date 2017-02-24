@@ -1,12 +1,14 @@
 object Form2: TForm2
-  Left = 1295
+  Left = 761
   Height = 392
-  Top = 146
+  Top = 348
   Width = 605
   Caption = 'Setup/Update'
   ClientHeight = 392
   ClientWidth = 605
   OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
   LCLVersion = '1.6.2.0'
   object CheckListBox1: TCheckListBox
     Left = 120
@@ -16,6 +18,7 @@ object Form2: TForm2
     ItemHeight = 0
     MultiSelect = True
     TabOrder = 0
+    TopIndex = -1
   end
   object CheckGroup1: TCheckGroup
     Left = 120
@@ -32,12 +35,12 @@ object Form2: TForm2
     ChildSizing.ShrinkVertical = crsScaleChilds
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 1
-    ClientHeight = 75
+    ClientHeight = 86
     ClientWidth = 339
     TabOrder = 1
     object CheckBox1: TCheckBox
       Left = 6
-      Height = 21
+      Height = 25
       Top = 6
       Width = 327
       Caption = 'Portable App'
@@ -45,8 +48,8 @@ object Form2: TForm2
     end
     object CheckBox2: TCheckBox
       Left = 6
-      Height = 21
-      Top = 27
+      Height = 25
+      Top = 31
       Width = 327
       Caption = 'Quellcode Anzeigen'
       TabOrder = 1
@@ -54,9 +57,9 @@ object Form2: TForm2
     object CheckBox3: TCheckBox
       Cursor = crCross
       Left = 6
-      Height = 21
+      Height = 24
       Hint = 'Beta only'
-      Top = 48
+      Top = 56
       Width = 327
       Caption = 'In Windows Programme Instaliren'
       Enabled = False
