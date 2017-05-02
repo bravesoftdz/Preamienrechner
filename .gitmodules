@@ -1,0 +1,3 @@
+[submodule "Update"]
+	path = Update
+	url = git@github.com:darkpinguin/Setup-and-Update.git

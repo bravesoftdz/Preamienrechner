@@ -1,5 +1,5 @@
 object Form1: TForm1
-  Left = 1022
+  Left = 1020
   Height = 237
   Top = 291
   Width = 344
@@ -15,21 +15,21 @@ object Form1: TForm1
     Top = 11
     Width = 168
     Caption = 'Betriebszugehörigkeit'
-    ClientHeight = 42
+    ClientHeight = 44
     ClientWidth = 164
     TabOrder = 0
     object Edit1: TEdit
       Left = 10
-      Height = 27
+      Height = 23
       Top = 0
       Width = 45
       TabOrder = 0
     end
     object Jahre: TLabel
       Left = 64
-      Height = 17
+      Height = 15
       Top = 8
-      Width = 39
+      Width = 33
       Caption = 'Jahre'
       ParentColor = False
     end
@@ -48,12 +48,12 @@ object Form1: TForm1
     ChildSizing.ShrinkVertical = crsScaleChilds
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 1
-    ClientHeight = 42
+    ClientHeight = 44
     ClientWidth = 142
     TabOrder = 1
     object RadioButton1: TRadioButton
       Left = 6
-      Height = 21
+      Height = 22
       Top = 0
       Width = 130
       Caption = 'unter 50 jahren'
@@ -63,8 +63,8 @@ object Form1: TForm1
     end
     object RadioButton2: TRadioButton
       Left = 6
-      Height = 21
-      Top = 21
+      Height = 22
+      Top = 22
       Width = 130
       Caption = '50 und älter'
       TabOrder = 1
@@ -121,12 +121,12 @@ object Form1: TForm1
     Top = 96
     Width = 140
     Caption = 'Prämie beträgt'
-    ClientHeight = 53
+    ClientHeight = 55
     ClientWidth = 136
     TabOrder = 7
     object preamie_in_euro: TEdit
       Left = 9
-      Height = 27
+      Height = 23
       Top = 8
       Width = 47
       ReadOnly = True
@@ -134,7 +134,7 @@ object Form1: TForm1
     end
     object Label1: TLabel
       Left = 65
-      Height = 17
+      Height = 15
       Top = 14
       Width = 8
       Caption = '€'
@@ -143,10 +143,10 @@ object Form1: TForm1
   end
   object Update_Label: TLabel
     Left = 200
-    Height = 17
+    Height = 15
     Hint = 'Press the Button Update NOW!!!'
     Top = 184
-    Width = 74
+    Width = 77
     BorderSpacing.Around = 3
     Caption = '!!!Update!!!'
     Color = clRed
